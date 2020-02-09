@@ -10,6 +10,16 @@
 
 ## 更新日志
 
+### 0.1.7
+
+
+- 修正下落速度
+- Slower note speed
+- 加入镜像功能
+- 修复acc结算0.00%的bug
+- 增加了测试谱面
+- save selected difficulty when switching among songs.
+
 ### 0.1.6
 
 - 修复了不能调节轨道透明度的问题
