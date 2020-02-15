@@ -1,85 +1,128 @@
-# 谱面格式
+# 目录结构&谱面格式
 
-## 歌曲Header
+## 目录结构
+
+* ChartSet
+
+  * Music
+  
+    * 1.ogg <音乐文件>
+    * 1.bin <音乐header文件>
+    
+    * 2.ogg
+    * 2.bin
+    
+    * 3.ogg
+    * 3.bin
+    * ...
+
+  * Chart
+
+    * 1
+      * easy.bin <谱面文件>
+      * normal.bin
+      * hard.bin
+      * expert.bin
+      * special.bin
+      
+      * bg.jpg <背景图片文件>
+      * bg.mp4 <视频文件>
+
+    * 2
+      * easy.bin
+      * normal.bin
+      * hard.bin
+      * expert.bin
+      * special.bin
+      
+      * bg1.jpg
+      * bg2.jpg
+      * bg.mp4
+      
+    * ...
+
+## 谱面格式
+
+### 歌曲Header
 
 ```json
 {
-    // 歌曲id
-    "id": 1,
-    // 歌曲名（仅限英文）
-	"title": "kimi ni furete",
-	"artist": "riko azuna",
-    // Unicode歌曲名
-	"titleUnicode": "君にふれて",
-    // Unicode歌手
-	"artistUnicode": "安月名莉子",
-    // 背景图片地址
-    "background": "background.jpg",
-    // 歌曲封面地址
-    "cover": "cover.jpg",
-    // 歌曲预览区间
-	"preview": [
-		49.447, // 开始时间
-		70.599 // 结束时间
-	]
+    //MusicID，音乐ID，由服务器分配。
+    "mid": 128,
+    //歌曲标题。
+    "title": "六兆年と一夜物語",
+    //歌曲艺术家。
+    "artist": "Roselia",
+    //preview，预览时间，单位为秒，默认的预览区间，在chart未设定此值时会应用的默认值。
+    "preview": [57.850, 78.124],
 }
 ```
 
-## 谱面信息
+### 谱面信息
 
 ```json
 {
-    // 对应歌曲id
-    "mid": 1,
-    // 谱面作者（仅限英文）
-	"author": "qing fu",
-    // Unicode谱面作者
-	"authorUnicode": "青芙",
-    // 背景
+    //ChartID，谱面ID，由服务器分配。
+    "cid": 512,
+    //MusicID，音乐ID，制谱时调用的音乐ID。
+    "mid": 128,
+    //author，作者用户名，是在BanGround社区注册的用户的用户名。
+    "author": "Bushiroad",
+    //authorNick，作者昵称，是作者对应的昵称。
+    "authorNick": "ブシロード",
+    //difficulty，难度名，目前只支持Easy、Normal、Hard、Expert、Special。
+    "difficulty": "Expert",
+    //level，难度等级，由谱师自行设定。（也有可能会被Verifier改掉？）
+    "level": 29,
+    //backgroundFile，背景文件，若设置了pic属性，则会在Select和Ingame界面显示指定的图片为背景；若设置了vid属性，则Ingame默认显示指定的视频为背景。
     "backgroundFile": {
-        // 背景图片（留空可使用默认背景）
-        image: "background.jpg",
-        // 背景视频（非必需，如填写可供用户选择）
-        video: "background.mp4"
+        "pic": "bg.jpg",
+        "vid": "bg.mp4"
     },
-    // 难度
-	"difficulty": "Hard",
-    // 等级
-	"level": 16,
+    //preview，预览时间，单位为秒，会循环在Select界面播放。
+    "preview": [57.850, 78.124],
+    //tag，谱面标签，可以基于tag搜索谱面。
+    "tag": [
+        "Six",
+        "trillion",
+        "years",
+        "and",
+        "one",
+        "night",
+        "story"
+    ]
+    //notes，谱面物件。
     "notes": [
         {
-            // 类型为设置bpm
+            //type，物件的类型。type为BPM表示设定音乐的每分钟节拍数.
             "type": "BPM",
-            // 开始节奏
-            "beat": [0, 0, 1],
-            // bpm值
-			"value": 90
+            //beat，物件的位置，是一个带分数，格式为[整数部分,分子,分母]。首物件必为[0,0,1]。
+            "beat": [0,0,1],
+            //value，物件的属性值，此处为BPM的数值。
+            "value": 85.0,
         },
         {
-            /**
-             * note类型：
-             * Single 单点或滑条开端
-             * Flick 单滑键或滑条结尾滑键
-             * SlideTick 滑条节点
-             * SlideTickEnd 滑条结尾
-             */
-			"type": "Single",
-            /**
-             * 所在节奏，用带分数表示
-             * 第一个元素为整数部分，第二个元素为分子部分，第三个元素为分母部分
-             * 如以下示例表示第2.5个节拍
-             */
-			"beat": [2, 1, 2],
-            // 所在轨道 0-6
-			"lane": 5
-            /**
-             * 有此属性的代表note属于滑条
-             * 如果type为Single，则为滑条开端
-             * 如果type为SlideTick，则为滑条节点
-             * 如果type为Flick或SlideTickEnd，则为滑条末端
-             */
+            /*
+            type的值为：
+            Single，表明此物件为单键（亦可能为滑条起始）；
+            Flick，表明此物件为滑键（亦可能为滑条结尾）；
+            SlideTick，表明此物件为滑条节点；
+            SlideTickEnd，表明此物件为滑条结尾。
+            */
+            "type": "Single",
+            "beat": [2,0,1],
+            //lane，轨道，范围为0≤lane≤6，对应第1至7条轨道。
+            "lane": 5,
+            /*
+            tickStack，节点栈，拥有此属性的物件视为对应滑条的一部分。
+            type的值为：
+            Single，表明此物件为滑条起始；
+            SlideTick，表明此物件为滑条节点；
+            Flick或SlideTickEnd，表明此物件为滑条结尾。
+            tickStack相等的起始、结尾和它们之间的SlideTick，均属于同一滑条。
+            */
             "tickStack": 0
-		}
+        }
     ]
 }
 ```
