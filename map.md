@@ -62,6 +62,8 @@
 
 ```json
 {
+    //version，谱面格式版本，用于区分不同版本的谱面格式。
+    "version": 1,
     //ChartID，谱面ID，由服务器分配。
     "cid": 512,
     //MusicID，音乐ID，制谱时调用的音乐ID。
