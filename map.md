@@ -68,7 +68,7 @@ Ogg格式，64kbps，无封面。
     "author": "Bushiroad",
     //authorNick，作者昵称，是作者对应的昵称。
     "authorNick": "ブシロード",
-    //difficulty，存储对应难度的难度等级
+    //difficulty，存储对应难度的难度等级，前端专用。
     "difficulty": {
         "easy": 8,
         "normal": 14,
@@ -76,6 +76,14 @@ Ogg格式，64kbps，无封面。
         "expert": 29,
         "special": 29
     },
+    //noteNum，存储对应难度的击打物件数量，前端专用。
+    "noteNum": {
+        "easy":157,
+        "normal":286,
+        "hard":501,
+        "expert":895,
+        "special":935
+    }
     //backgroundFile，背景文件，若设置了pic属性，则会在Select和Ingame界面显示指定的图片为背景；若设置了vid属性，则Ingame默认显示指定的视频为背景
     "backgroundFile": {
         "pic": "bg.jpg",
@@ -99,39 +107,46 @@ Ogg格式，64kbps，无封面。
 ### chart
 
 ```json
-[
-    {
-        //type，物件的类型。type为BPM表示设定音乐的每分钟节拍数.
-        "type": "BPM",
-        //beat，物件的位置，是一个带分数，格式为[整数部分,分子,分母]。首物件必为[0,0,1]。
-        "beat": [0,0,1],
-        //value，物件的属性值，此处为BPM的数值。
-        "value": 85.0,
-        ]
-    },
-    {
-        /*
-        type的值为：
-        Single，表明此物件为单键（亦可能为滑条起始）；
-        Flick，表明此物件为滑键（亦可能为滑条结尾）；
-        SlideTick，表明此物件为滑条节点；
-        SlideTickEnd，表明此物件为滑条结尾。
-        */
-        "type": "Single",
-        "beat": [2,0,1],
-        //lane，轨道，范围为0≤lane≤6，对应第1至7条轨道。
-        "lane": 5,
-        /*
-        tickStack，节点栈，拥有此属性的物件视为对应滑条的一部分。
-        type的值为：
-        Single，表明此物件为滑条起始；
-        SlideTick，表明此物件为滑条节点；
-        Flick或SlideTickEnd，表明此物件为滑条结尾。
-        tickStack相等的起始、结尾和它们之间的SlideTick，均属于同一滑条。
-        */
-        "tickStack": 0
-    }
-]
+{
+    //difficulty，存储当前谱面对应的难度名。
+    "difficulty": "Expert",
+    //level，存储当前谱面对应的难度等级。
+    "level": 29,
+    //offset，存储当前谱面的前黑时长，单位为毫秒。
+    "offset": 0,
+    [
+        {
+            //type，物件的类型。type为BPM表示设定音乐的每分钟节拍数.
+            "type": "BPM",
+            //beat，物件的位置，是一个带分数，格式为[整数部分,分子,分母]。首物件必为[0,0,1]。
+            "beat": [0, 0, 1],
+            //value，物件的属性值，此处为BPM的数值。
+            "value": 85.0
+        },
+        {
+            /*
+        		type的值为：
+	    	    Single，表明此物件为单键（亦可能为滑条起始）；
+        		Flick，表明此物件为滑键（亦可能为滑条结尾）；
+	        	SlideTick，表明此物件为滑条节点；
+        		SlideTickEnd，表明此物件为滑条结尾。
+	        	*/
+            "type": "Single",
+            "beat": [2, 0, 1],
+            //lane，轨道，范围为0≤lane≤6，对应第1至7条轨道。
+            "lane": 5,
+            /*
+        		tickStack，节点栈，拥有此属性的物件视为对应滑条的一部分。
+	        	type的值为：
+	        	Single，表明此物件为滑条起始；
+	        	SlideTick，表明此物件为滑条节点；
+	        	Flick或SlideTickEnd，表明此物件为滑条结尾。
+	        	tickStack相等的起始、结尾和它们之间的SlideTick，均属于同一滑条。
+	        	*/
+            "tickStack": 0
+        }
+    ]
+}
 ```
 
 <vssue title="Vssue Demo" />
