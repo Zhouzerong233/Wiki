@@ -114,7 +114,7 @@ Ogg格式，64kbps，无封面。
     "level": 29,
     //offset，存储当前谱面的前黑时长，单位为毫秒。
     "offset": 0,
-    [
+    "notes": [
         {
             //type，物件的类型。type为BPM表示设定音乐的每分钟节拍数.
             "type": "BPM",
