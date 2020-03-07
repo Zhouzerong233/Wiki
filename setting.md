@@ -260,6 +260,6 @@ function test (maxCombo) {
 
 另外，值得注意的判定机制有：
 
-> * 当一次输入处于多个Note的判定范围内时，**离判定线最近的Note将优先判定**。
+> * 当一次输入处于多个Note的判定范围内时，**最早出现的Note将优先判定**。
 
 <vssue title="Vssue Demo" />
