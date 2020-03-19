@@ -19,7 +19,7 @@
 - chart
   - 10 <!--sid命名的文件夹-->
     - cheader.bin <!--谱面集对应的header，存储调用的mid、作者、tag等-->
-    - easy.bin <!--谱面文件，叫什么无所谓-->
+    - easy.bin <!--谱面文件，用难度命名-->
     - expert.bin
     - bg.jpg <!--背景文件，叫什么无所谓-->
   - 98
@@ -31,7 +31,7 @@
 
 ### 音乐
 
-Ogg格式，64kbps，无封面。
+Ogg格式，96kbps，无封面。
 
 ### mheader
 
