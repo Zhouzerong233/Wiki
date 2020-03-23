@@ -80,8 +80,8 @@ $$
 r=
 \begin{cases}
 p+q,p+q<0.1\\
-0.1,p+q>=0.1\\\
-end{cases}
+0.1,p+q>=0.1\\
+\end{cases}
 $$
 
 设每个Note的得分为$ x_i $，则： $$ x_i=a_i*r $$
