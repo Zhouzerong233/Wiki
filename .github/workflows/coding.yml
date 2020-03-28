@@ -21,17 +21,17 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Install ssh key
-    - name: Install SSH Key
-      uses: shimataro/ssh-key-action@v2.0.1
-      with:
-        # SSH private key
-        key: ${{ secrets.SSH_KEY }}
-        known_hosts:  e.coding.net
     
     # Push to coding
     - name: Push to coding
+      env:
+          ACTION_DEPLOY_KEY: ${{ secrets.SSH_KEY }}
       run: |
+        mkdir -p ~/.ssh/
+        echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
+        git config --global user.name 'zz5840'
+        git config --global user.email 'zz5840@qq.com'
         git remote add coding git@e.coding.net:zz5840/banground-wiki/bangbangboom-editor.git
         git push coding --force
