@@ -28,7 +28,7 @@ jobs:
       with:
         # SSH private key
         key: ${{ secrets.SSH_KEY }}
-        known_hosts:  coding.net
+        known_hosts:  e.coding.net
     
     # Push to coding
     - name: Push to coding
