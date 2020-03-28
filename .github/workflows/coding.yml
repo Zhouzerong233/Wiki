@@ -36,4 +36,5 @@ jobs:
         rm -rf .git
         git init
         git remote add origin git@e.coding.net:zz5840/banground-wiki/bangbangboom-editor.git
+        git commit -m "deploy" -a
         git push --set-upstream origin master --force
