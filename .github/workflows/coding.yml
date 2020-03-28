@@ -33,5 +33,6 @@ jobs:
         ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
         git config --global user.name 'zz5840'
         git config --global user.email 'zz5840@qq.com'
+        git fetch --unshallow coding
         git remote add coding git@e.coding.net:zz5840/banground-wiki/bangbangboom-editor.git
         git push coding --force
