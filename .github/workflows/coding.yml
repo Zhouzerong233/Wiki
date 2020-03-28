@@ -35,5 +35,5 @@ jobs:
         git config --global user.email 'zz5840@qq.com'
         rm -rf .git
         git init
-        git remote add origon git@e.coding.net:zz5840/banground-wiki/bangbangboom-editor.git
+        git remote add origin git@e.coding.net:zz5840/banground-wiki/bangbangboom-editor.git
         git push
