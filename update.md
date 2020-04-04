@@ -24,6 +24,7 @@
 - 优化了Auto Mod的表现*（作者：KCFindstr）*
 - 优化了游戏内语音的表现*（作者：LingFeng-bbben）*
 - 优化了引导和细节提示*（作者：Frenqy）*
+- 优化了Perfect的E/L判定调节，现在将Perfect的E/L判定显示范围设为0时，将不再显示Perfect的E/L*（作者：Frenqy）*
 - 调整FMOD为游戏默认的音频引擎*（作者：Frenqy）*
 
 ### 0.4.3
