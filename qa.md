@@ -50,7 +50,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 **安卓用户**以及**Windows用户**更新游戏后，原有auth key可以继续使用
 
-**苹果用户**更新游戏后，请先使用`/auth view`查询原有auth key的id，再使用`/auth clear id`清除该auth key，最后重新注册以获取新auth key
+**苹果用户**更新游戏后，请先使用`/auth view`查询原有auth key的id，再使用`/auth clear id`清除设备信息
 
 [_更多机器人指令_](/qa?id=%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%87%E4%BB%A4)
 
