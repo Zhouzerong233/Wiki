@@ -59,7 +59,7 @@ Ogg格式，96kbps，无封面。
 ```json
 {
     //version，谱面版本，每次更新谱面时此属性+1。
-    version: 1,
+    "version": 1,
     //SetID，谱面ID，由服务器分配。
     "sid": 210,
     //MusicID，音乐ID，制谱时调用的音乐ID。
