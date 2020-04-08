@@ -124,7 +124,14 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 2. **设置**的**判定**选项卡里，打开**显示PERFECT的E/L**选项。进入游戏正常游玩后，观察结算界面的 Early/Late 数目和平均偏移，遵循**Early多调大，Late多调小**的原则调节**音频偏移**，**Early多调小，Late多调大**的原则调节**判定偏移**，直至数目和平均偏移相近为止
 
-3. **设置**的**判定**选项卡里，将**音频偏移**和**判定偏移**均设置为0，关闭**显示 PERFECT的E/L**选项。进入游戏正常游玩后，观察结算界面的 Early/Late 数目和平均偏移，按以下公式计算得到**判定偏移**的值：`判定偏移＝Late平均值﹣Early平均值﹣40`
+3. **设置**的**判定**选项卡里，将**音频偏移**和**判定偏移**均设置为0，关闭**显示 PERFECT的E/L**选项。进入游戏正常游玩后，观察结算界面的 Early/Late 数目和平均偏移，按以下公式计算得到**判定偏移**的值：
+
+$$
+judge=\begin{cases}
+Early_{\tiny\ Avg}-40,Early_{\tiny\ Avg}>Late_{\tiny\ Avg} \\
+40-Late_{\tiny\ Avg},Early_{\tiny\ Avg}<=Late_{\tiny\ Avg} \\
+\end{cases}
+$$
 
 4. 打击音延迟大请尝试减小缓冲区
 
@@ -200,13 +207,14 @@ kirapack导入失败请在群里附上错误信息截图
 - 项目进展：[https://github.com/orgs/BanGround/projects/2](https://github.com/orgs/BanGround/projects/2)
 
 - ebbb在线制谱器：[https://editor.bangbangboom.moe/](https://editor.bangbangboom.moe/)   
- 
-	[_ebbb国内线路_](http://212.64.10.35:8081/)
+
+	_ebbb国内线路_
+[*(gitee)*](https://reikohaku.gitee.io/ebbb) [*(小站)*](http://212.64.10.35:8081/)
 
 - 摸鱼小站：[http://212.64.10.35/](http://212.64.10.35/)
 
 ***
 
-手册版本：V1.5.2
+手册版本：V1.5.4
 
-更新日期：2020/04/07
+更新日期：2020/04/08
