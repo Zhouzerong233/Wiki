@@ -200,13 +200,15 @@ kirapack导入失败请在群里附上错误信息截图
 - 项目进展：[https://github.com/orgs/BanGround/projects/2](https://github.com/orgs/BanGround/projects/2)
 
 - ebbb在线制谱器：[https://editor.bangbangboom.moe/](https://editor.bangbangboom.moe/)   
+
+	[_ebbb国内线路（gitee）_](https://reikohaku.gitee.io/ebbb)
  
-	[_ebbb国内线路_](http://212.64.10.35:8081/)
+	[_ebbb国内线路（小站）_](http://212.64.10.35:8081/)
 
 - 摸鱼小站：[http://212.64.10.35/](http://212.64.10.35/)
 
 ***
 
-手册版本：V1.5.2
+手册版本：V1.5.3
 
-更新日期：2020/04/07
+更新日期：2020/04/08
