@@ -32,7 +32,7 @@ _不活跃：指两周内没有登录游戏的记录_
 
 	在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过**Mac、装有黑苹果或黑苹果虚拟机的PC**进行自签
 
-	> 教程：[https://www.jianshu.com/p/a224a5213b7d](https://www.jianshu.com/p/a224a5213b7d)
+	> [通过macOS自签教程](/insmacos)
 
 	*原来的Appcake方法已经失效*
 
@@ -113,7 +113,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 如果直接打开文件没有成功导入，请尝试把kirapack文件手动移动到以下路径：
 ```
-%USERPROFILE%\AppData\LocalLow\Kirakira Games\BanGround-Unity\InBox
+%LocalAppdata%Low\Kirakira Games\BanGround-Unity\InBox
 ```
 然后启动游戏
 
