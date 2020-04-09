@@ -14,7 +14,7 @@
 
 _不活跃：指两周内没有登录游戏的记录_
 
-## 下载游戏
+## 安装游戏
 
 **先看群公告**，群公告告知了游戏的最新版本
 
@@ -30,11 +30,14 @@ _不活跃：指两周内没有登录游戏的记录_
 
 2. 非越狱设备
 
-	请先安装AppCake后用AppCake打开ipa文件
+	在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过**Mac、装有黑苹果或黑苹果虚拟机的PC**进行自签
 
-	> AppCake下载地址：[https://iphonecake.com](https://iphonecake.com)
+	> [通过macOS自签教程](/insmacos)
 
-***由于不明原因，证书版会出现掉签的情况，所以不再提供证书版下载，原先购买证书版的可以选择退款或等社区建设完成后可以获得额外1个月${Supporter Ⅳ}$资格作为补偿***
+	*原来的Appcake方法已经失效*
+
+***由于不明原因，证书版会出现掉签的情况，所以不再提供证书版下载，原先购买证书版的可以选择退款或等社区建设完成后可以获得额外1个月Supporter Ⅳ资格作为补偿***
+
 
 ### Windows
 
@@ -110,7 +113,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 如果直接打开文件没有成功导入，请尝试把kirapack文件手动移动到以下路径：
 ```
-%USERPROFILE%\AppData\LocalLow\Kirakira Games\BanGround-Unity\InBox
+%LocalAppdata%Low\Kirakira Games\BanGround-Unity\InBox
 ```
 然后启动游戏
 
@@ -128,8 +131,8 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 $$
 judge=\begin{cases}
-Early_{\tiny\ Avg}-40,Early_{\tiny\ Avg}>Late_{\tiny\ Avg} \\
-40-Late_{\tiny\ Avg},Early_{\tiny\ Avg}<=Late_{\tiny\ Avg} \\
+\overline{Early}-40,\overline{Early}>\overline{Late} \\
+40-\overline{Late},\overline{Early}\leq\overline{Late} \\
 \end{cases}
 $$
 
@@ -215,6 +218,6 @@ kirapack导入失败请在群里附上错误信息截图
 
 ***
 
-手册版本：V1.5.4
+手册版本：V1.5.6
 
-更新日期：2020/04/08
+更新日期：2020/04/09
