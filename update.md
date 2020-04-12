@@ -13,6 +13,7 @@
 
 - 新增了对背景视频的支持*（作者：LingFeng-bbben）*
 - 新增了演出开始前的加载界面显示歌曲信息*（作者：LingFeng-bbben、Frenqy、AECBanana）*
+- 新增了实验性功能：音频同步*（作者：KCFindstr）*
 - 修复了某些情况下会弹出```ERR_CHANNEL_STOLEN```错误的问题*（作者：KCFindstr）*
 - 优化了4:3比例下画面设备信息的显示位置*（作者：AECBanana）*
 - 优化了设置界面中滑条的动画*（作者：AECBanana）*
