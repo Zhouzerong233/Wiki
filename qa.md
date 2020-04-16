@@ -41,14 +41,12 @@ _不活跃：指两周内没有登录游戏的记录_
 		> AppCake下载地址（需要Safari打开）：[https://iphonecake.com](https://iphonecake.com)
 
 		*注意：由于Appcake企业签名的的不稳定，偶尔会出现掉签情况，掉签后可能一段时间内无法恢复签名的使用。并且在Appcake签名恢复后您需要完整卸载Appcake与BanGround后重新安装，这也就意味着**您会丢失所有用户数据**。*
-
-
-	3. 使用Mac自行签名安装（较麻烦，**需要**电脑）
-
-		在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过**Mac、装有黑苹果或黑苹果虚拟机的PC**进行自签
-
-		> [通过macOS自签教程](/insmacos)
-
+		
+	3. 使用Mac自行签名安装（较麻烦，**需要电脑**）
+	
+	   在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过**Mac、装有黑苹果或黑苹果虚拟机的PC**进行自签。
+	
+	   > [通过macOS自签教程](/insmacos)
 
 ***由于不明原因，证书版会出现掉签的情况，所以不再提供证书版下载，原先购买证书版的可以选择退款或等社区建设完成后可以获得额外1个月Supporter Ⅳ资格作为补偿***
 
@@ -69,7 +67,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 更换设备或更新游戏后，如果原有auth key无法使用，请先使用`/auth view`查询原有auth key的id，再使用`/auth clear id`清除设备绑定信息，解绑后即可使用原有key进行登陆。如遇机器人出错无法clear，可向管理员寻求帮助删除原有auth key后自行重新获取新的auth key
 
-[_更多机器人指令_](/qa?id=auth-key-相关)
+[_更多机器人指令_](/qa?id=bot)
 
 如果你有多个设备需要测试，请联系管理员为你申请新的auth key
 
@@ -85,7 +83,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 	你可以在群里或私聊**一只摸鱼的鱼**使用`小站`指令，它会告诉你小站的地址。你可以在里面下载谱面
 
-	你也可以使用`kirapack`+`bestdori自制谱谱面id`指令，它会帮你转换并告诉你谱面下载地址
+	你也可以使用[kirapack下载指令](#kirapackCmd)
 
 3. Windows 端转谱器
 
@@ -191,6 +189,8 @@ kirapack导入失败请在群里附上错误信息截图
 
 ## 群机器人指令
 
+### ⑨bot
+
 `/help` 获取机器人帮助
 
 #### auth key 相关
@@ -217,6 +217,12 @@ kirapack导入失败请在群里附上错误信息截图
 
 `/issue unsubscribe [id]` 取消订阅issue(创建者不能取消订阅)
 
+### 小鱼
+
+<span id="kirapackCmd">```kirapack <谱面id> [预览起始时间（秒） 预览终止时间（秒） 背景图片链接]```转换Bestdori!上的谱面为kirapack，提供下载链接，并登录到[小站](http://212.64.10.35/#/list)上以供搜索、浏览、下载</span>
+
+```kkp <谱面id>```查询Bestdori!上的谱面信息
+
 ## 其他资源
 
 - 游戏Wiki：[https://wiki.banground.fun](https://wiki.banground.fun)
@@ -225,8 +231,7 @@ kirapack导入失败请在群里附上错误信息截图
 
 - ebbb在线制谱器：[https://editor.bangbangboom.moe/](https://editor.bangbangboom.moe/)   
 
-	_ebbb国内线路_
-[*(gitee)*](https://reikohaku.gitee.io/ebbb) [*(小站)*](http://212.64.10.35:8081/)
+	_[ebbb国内线路](https://reikohaku.gitee.io/ebbb)_
 
 - 摸鱼小站：[http://212.64.10.35/](http://212.64.10.35/)
 
