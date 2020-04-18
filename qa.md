@@ -29,24 +29,102 @@ _不活跃：指两周内没有登录游戏的记录_
 	在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件直接安装
 
 2. 非越狱设备
+	
+	在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过以下方式安装
 
-	1. 使用AltStore自行签名安装（推荐，**需要**电脑）
+	1. 使用AltStore自行签名安装(推荐，**需要**电脑)
 
-		> [使用AltStore签名教程](/insaltstore)
+	<details>
+		<summary>使用AltStore签名教程</summary>
+		
+		#### 所需软件
+		
+		1. AltStore([https://altstore.io/](https://altstore.io/))
+		2. iTunes([https://www.apple.com.cn/itunes/](https://www.apple.com.cn/itunes/))
+		3. iCloud([https://support.apple.com/zh-cn/HT204283](https://support.apple.com/zh-cn/HT204283))
+		
+		#### 安装Altstore
+		
+		1. 安装完成后运行电脑上的AltStore(运行后会出现在任务栏)
+		2. 在您的iOS设备上信任连接的电脑(首次连接电脑可能需要)
+		3. 打开iTunes，启用“通过Wi-Fi与此iPhone/iPad同步”
+		4. 点击任务栏的AltStore图标，点击“Install AltStore”并选择您的设备进行安装
+		5. 在弹出的窗口登陆您的AppleID以完成安装
+		
+		#### 通过Altstore安装BanGround
+		
+		1. 在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件并传输到您设备内
+		2. 在设备中找到您下载的ipa，点击“用其他应用打开”。
+		3. 找到并选择“拷贝到‘AltStore’”
+		4. 在Altstore中输入安装时的AppleID进行登陆，等待片刻即可完成安装
+		
+		#### 注意事项
+		
+		- Altstore的签名有效期为7天。电脑端AltStore运行时，如果您的iOS设备处于同一无线网络下AltStore即可自动续签
 
-	2. 使用Appcake代为签名安装（不稳定，**不需要**电脑）
+	</details>
+
+	2. 使用Appcake代为签名安装(不稳定，**不需要**电脑)
 
 		请下载安装AppCake后用AppCake打开ipa文件
 		
-		> AppCake下载地址（需要Safari打开）：[https://iphonecake.com](https://iphonecake.com)
+		> AppCake下载地址(需要Safari打开)：[https://iphonecake.com](https://iphonecake.com)
 
 		*注意：由于Appcake企业签名的的不稳定，偶尔会出现掉签情况，掉签后可能一段时间内无法恢复签名的使用。并且在Appcake签名恢复后您需要完整卸载Appcake与BanGround后重新安装，这也就意味着**您会丢失所有用户数据**。*
 		
-	3. 使用Mac自行签名安装（较麻烦，**需要电脑**）
-	
-	   在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过**Mac、装有黑苹果或黑苹果虚拟机的PC**进行自签。
-	
-	   > [通过macOS自签教程](/insmacos)
+	3. 使用Mac自行签名安装(较麻烦，**需要**电脑)
+
+	<details>
+		<summary>通过macOS自签教程</summary>
+		
+		如果您没有Mac，以下步骤需要从头看起
+		
+		如果您有Mac，请跳转至步骤6`安装ipa文件`
+		
+		#### 所需软件
+		
+		1. vmware 15 pro
+		2. macOS 10.15镜像
+		3. vm unlock插件
+		4. darwin.iso
+		
+		需要的软件放在百度网盘，镜像大小10G
+		
+		链接: [https://pan.baidu.com/s/1Pulz57HRww9ZB_mCw4yAzg](https://pan.baidu.com/s/1Pulz57HRww9ZB_mCw4yAzg) 提取码: 6yan
+		
+		#### 安装步骤
+		1. vmware的安装
+		
+			自行百度，安装完成后不要打开，接下来还要安装插件
+		
+		2. 安装插件
+		
+			1. 解压unlock-master.zip文件，右键管理员方式运行win-install.cmd
+			2. 等待运行完成后win-install.cmd自动关闭
+		
+		3. 新建虚拟机
+		
+			点击下一步时选择cdr格式的镜像，安装时选择mac os，版本号选择10.15
+			然后等待安装完毕即可
+		
+		4. 安装vmware tool
+		
+			载入darwin.iso，安装完毕后点击重启即可
+		
+		5. 配置vmware(需要在关闭虚拟机情况下进行设置)
+		
+			- 网络配置：选择桥接模式
+			- USB控制器：USB兼容性选择USB2.0
+		
+		6. 安装ipa文件
+		
+			1. 登录邮箱，登陆完成后进邮箱设置
+			2. 开启邮箱插件，应用即可
+			3. 下载NullXImpactor
+			4. 打开应用，把ipa文件拖动到该软件中，点击install
+			5. 输入帐号密码，等待安装完成
+		
+	</details>
 
 ***由于不明原因，证书版会出现掉签的情况，所以不再提供证书版下载，原先购买证书版的可以选择退款或等社区建设完成后可以获得额外1个月Supporter Ⅳ资格作为补偿***
 
@@ -67,7 +145,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 更换设备或更新游戏后，如果原有auth key无法使用，请先使用`/auth view`查询原有auth key的id，再使用`/auth clear id`清除设备绑定信息，解绑后即可使用原有key进行登陆。如遇机器人出错无法clear，可向管理员寻求帮助删除原有auth key后自行重新获取新的auth key
 
-[_更多机器人指令_](/qa?id=bot)
+[_更多机器人指令_](#auth-key-相关)
 
 如果你有多个设备需要测试，请联系管理员为你申请新的auth key
 
@@ -83,7 +161,7 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 	你可以在群里或私聊**一只摸鱼的鱼**使用`小站`指令，它会告诉你小站的地址。你可以在里面下载谱面
 
-	你也可以使用[kirapack下载指令](#kirapackCmd)
+	你也可以使用[kirapack下载指令](#小鱼)
 
 3. Windows 端转谱器
 
@@ -185,7 +263,7 @@ kirapack导入失败请在群里附上错误信息截图
 
 - 您可以通过机器人收到issue的最新动态
 
-[_更多机器人指令_](/qa?id=issue-相关)
+[_更多机器人指令_](#issue-相关)
 
 ## 群机器人指令
 
@@ -211,17 +289,17 @@ kirapack导入失败请在群里附上错误信息截图
 
 `/issue list` 查看我创建的issue(获得以下指令id参数)
 
-`/issue view [id]` 查看issue详情
+`/issue view <id>` 查看issue详情
 
-`/issue comment [id]` 评论并订阅issue
+`/issue comment <id>` 评论并订阅issue
 
-`/issue unsubscribe [id]` 取消订阅issue(创建者不能取消订阅)
+`/issue unsubscribe <id>` 取消订阅issue(创建者不能取消订阅)
 
 ### 小鱼
 
-<span id="kirapackCmd">```kirapack <谱面id> [预览起始时间（秒） 预览终止时间（秒） 背景图片链接]```转换Bestdori!上的谱面为kirapack，提供下载链接，并登录到[小站](http://212.64.10.35/#/list)上以供搜索、浏览、下载</span>
+`kirapack <谱面id> [预览起始时间(秒) 预览终止时间(秒) 背景图片链接]`转换Bestdori上的谱面为kirapack，提供下载链接，并登录到[小站](http://212.64.10.35/#/list)上以供搜索、浏览、下载
 
-```kkp <谱面id>```查询Bestdori!上的谱面信息
+`kkp <谱面id>`查询Bestdori!上的谱面信息
 
 ## 其他资源
 
@@ -231,12 +309,12 @@ kirapack导入失败请在群里附上错误信息截图
 
 - ebbb在线制谱器：[https://editor.bangbangboom.moe/](https://editor.bangbangboom.moe/)   
 
-	_[ebbb国内线路](https://reikohaku.gitee.io/ebbb)_
+	[_ebbb国内线路_](https://reikohaku.gitee.io/ebbb)
 
 - 摸鱼小站：[http://212.64.10.35/](http://212.64.10.35/)
 
 ***
 
-手册版本：V1.5.6
+手册版本：V1.5.7
 
-更新日期：2020/04/09
+更新日期：2020/04/18
