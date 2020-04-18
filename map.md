@@ -83,7 +83,7 @@ Ogg格式，96kbps，无封面。
         "hard":501,
         "expert":895,
         "special":935
-    }
+    },
     //backgroundFile，背景文件，若设置了pic属性，则会在Select和Ingame界面显示指定的图片为背景；若设置了vid属性，则Ingame默认显示指定的视频为背景
     "backgroundFile": {
         "pic": "bg.jpg",
