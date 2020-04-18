@@ -32,9 +32,59 @@ _不活跃：指两周内没有登录游戏的记录_
 
 	在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件，然后通过**Mac、装有黑苹果或黑苹果虚拟机的PC**进行自签
 
-	> [通过macOS自签教程](/insmacos)
+<details>
+<summary>通过macOS自签教程</summary>
 
-	*原来的Appcake方法已经失效*
+如果您没有Mac，以下步骤需要从头看起
+
+如果您有Mac，请跳转至步骤6`安装ipa文件`
+
+#### 所需软件
+
+1. vmware 15 pro
+2. macOS 10.15镜像
+3. vm unlock插件
+4. darwin.iso
+
+需要的软件放在百度网盘，镜像大小10G
+
+链接: [https://pan.baidu.com/s/1Pulz57HRww9ZB_mCw4yAzg](https://pan.baidu.com/s/1Pulz57HRww9ZB_mCw4yAzg) 提取码: 6yan
+
+#### 安装步骤
+1. vmware的安装
+
+	自行百度，安装完成后不要打开，接下来还要安装插件
+
+2. 安装插件
+
+	1. 解压unlock-master.zip文件，右键管理员方式运行win-install.cmd
+	2. 等待运行完成后win-install.cmd自动关闭
+
+3. 新建虚拟机
+
+	点击下一步时选择cdr格式的镜像，安装时选择mac os，版本号选择10.15
+	然后等待安装完毕即可
+
+4. 安装vmware tool
+
+	载入darwin.iso，安装完毕后点击重启即可
+
+5. 配置vmware(需要在关闭虚拟机情况下进行设置)
+
+	- 网络配置：选择桥接模式
+	- USB控制器：USB兼容性选择USB2.0
+
+6. 安装ipa文件
+
+	1. 登录邮箱，登陆完成后进邮箱设置
+	2. 开启邮箱插件，应用即可
+	3. 下载NullXImpactor
+	4. 打开应用，把ipa文件拖动到该软件中，点击install
+	5. 输入帐号密码，等待安装完成
+
+</details>
+
+*原来的Appcake方法已经失效*
 
 ***由于不明原因，证书版会出现掉签的情况，所以不再提供证书版下载，原先购买证书版的可以选择退款或等社区建设完成后可以获得额外1个月Supporter Ⅳ资格作为补偿***
 
@@ -211,8 +261,7 @@ kirapack导入失败请在群里附上错误信息截图
 
 - ebbb在线制谱器：[https://editor.bangbangboom.moe/](https://editor.bangbangboom.moe/)   
 
-	_ebbb国内线路_
-[*(gitee)*](https://reikohaku.gitee.io/ebbb) [*(小站)*](http://212.64.10.35:8081/)
+	[_ebbb国内线路_](https://reikohaku.gitee.io/ebbb)
 
 - 摸鱼小站：[http://212.64.10.35/](http://212.64.10.35/)
 
@@ -220,4 +269,4 @@ kirapack导入失败请在群里附上错误信息截图
 
 手册版本：V1.5.6
 
-更新日期：2020/04/09
+更新日期：2020/04/18
