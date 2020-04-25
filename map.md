@@ -91,7 +91,7 @@
 
 谱面文件是后缀名为```.bin```的二进制文件。
 
-该文件的文件名必须为其对应的难度名，即以下<span id="diffcultyNames">五个字符串</span>之一：
+该文件的文件名必须为其对应的难度名，即以下<span name="diffcultyNames">五个字符串</span>之一：
 
 * easy
 * normal
@@ -143,7 +143,7 @@
 
       建议第一个音符对象的```type```属性设定为```BPM```。
 
-    * <span id="noteObject_beat">beat</span>
+    * <span name="noteObject_beat">beat</span>
 
       音符对象所处的节拍位置。为一个整数数组，有且仅有三个整数。
 
@@ -416,93 +416,7 @@
 
 脚本文件不是必须存在的。
 
-以下是lua脚本文件的说明：
-
-### 事件
-
---------
-
-### 帧刷新
-
-> function OnUpdate(audioTime)
-
-帧刷新时调用此函数。
-
-| 参数名    | 数据类型 | 说明                                           |
-| --------- | -------- | ---------------------------------------------- |
-| audioTime | number   | 事件发生时，音频的播放位置。单位为毫秒（ms）。 |
-
-
-
-### 方法
-
---------
-
-### 获取摄像机
-
-> CS.ChartCamera()
-
-获取摄像机对象以进行操作。摄像机的默认位置为(0, 0, 0)。
-
-**示例**
-
-> local camera = CS.ChartCamera();
-
-### 设置相机旋转
-
-> var:SetRotation(pitch, yaw, roll)
-
-设置相机旋转的角度。
-
-| 参数名 | 数据类型 | 说明                        |
-| ------ | -------- | --------------------------- |
-| pitch  | number   | 俯仰角。围绕x轴旋转的角度。 |
-| yaw    | number   | 偏航角。围绕y轴旋转的角度。 |
-| roll   | number   | 翻滚角。围绕z轴旋转的角度。 |
-
-**示例**
-
-> camera:SetRotation(0, 0, audioTime / 1000)
-
-### 设置相机位置
-
-> var:SetRotation(x, y, z)
-
-设置相机旋转的角度。
-
-| 参数名 | 数据类型 | 说明      |
-| ------ | -------- | --------- |
-| x      | number   | x轴偏移。 |
-| y      | number   | y轴偏移。 |
-| z      | number   | z轴偏移。 |
-
-**示例**
-
-> camera:SetPosition(0, audioTime / 10000, 0)
-
-### 载入音频文件
-
-> CS.ScriptSoundEffect(fileName)
-
-载入一个音频文件用于播放。
-
-| 参数名   | 数据类型 | 说明                                                 |
-| -------- | -------- | ---------------------------------------------------- |
-| fileName | string   | 要载入的音频文件的文件名。文件名相对于脚本所在目录。 |
-
-**示例**
-
-> local se1 = CS.ScriptSoundEffect("click_drum.wav");
-
-### 播放音频文件
-
-> var:PlayOneShot()
-
-播放一个音频。
-
-**示例**
-
-> se1:PlayOneShot();
+要查看详细的编写说明，请见[脚本](script)。
 
 ## 示例
 
