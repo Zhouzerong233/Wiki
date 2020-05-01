@@ -36,9 +36,9 @@ local camera = CS.ChartCamera();
 
 设置相机旋转的角度。
 
-<center>![Rotation](/img/rotation.jpg "三维空间的右手笛卡尔坐标示意图")</center>
+![Rotation](/img/rotation.jpg "三维空间的右手笛卡尔坐标示意图")
 
-<center><font color=#999999>三维空间的右手笛卡尔坐标示意图</font></center>
+<font color=#999999>三维空间的右手笛卡尔坐标示意图</font>
 
 | 参数名 | 数据类型 | 说明                        |
 | ------ | -------- | --------------------------- |
@@ -58,9 +58,9 @@ camera:SetRotation(0, 0, audioTime / 1000)
 
 设置相机旋转的角度。
 
-<center>![Position](/img/position.jpg "X-Y-Z坐标轴示意图")</center>
+![Position](/img/position.jpg "X-Y-Z坐标轴示意图")
 
-<center><font color=Red>X</font><font color=#999999>-</font><font color=Green>Y</font><font color=#999999>-</font><font color=Blue>Z</font><font color=#999999>坐标轴示意图</font></center>
+<font color=Red>X</font><font color=#999999>-</font><font color=Green>Y</font><font color=#999999>-</font><font color=Blue>Z</font><font color=#999999>坐标轴示意图</font>
 
 | 参数名 | 数据类型 | 说明      |
 | ------ | -------- | --------- |
