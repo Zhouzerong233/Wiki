@@ -1,13 +1,21 @@
 # 更新日志
 
-> Android最新版：0.6.2
+> Android最新版：0.7.0
 > 
-> iOS最新版：0.6.2
+> iOS最新版：0.7.0
 >
-> Windows最新版：0.6.2
+> Windows最新版：0.7.0
 ------
 
 ## 更新日志
+
+### 0.7.0
+
+- UI焕然一新！*（作者：AECBanana、Frenqy、GEEKiDoS、KCFindstr、LingFeng-bbben）*
+- 新增了游戏内    的Live2d*（作者：LingFeng-bbben）*
+- 新增了偏移调节向导*（作者：AECBanana、KCFindstr）*
+- 新增了Full Combo和All Perfect指示器*（作者：AECBanana、Frenqy）*
+- 修复了上隐调整预览存在的问题*（作者：Frenqy）*
 
 ### 0.6.2
 
