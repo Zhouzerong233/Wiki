@@ -1,13 +1,20 @@
 # 更新日志
 
-> Android最新版：0.7.0
+> Android最新版：0.7.1
 > 
-> iOS最新版：0.7.0
+> iOS最新版：0.7.1
 >
-> Windows最新版：0.7.0
+> Windows最新版：0.7.1
 ------
 
 ## 更新日志
+
+### 0.7.1
+
+- UI界面还原到先前的风格，并做了部分优化*（作者：AECBanana、Frenqy、GEEKiDoS、LingFeng-bbben）*
+- 修复了音量调节存在的问题*（作者：Frenqy）*
+- 更换了新的内测密钥验证系统，请重新获取密钥*（作者：Frenqy、ReiKohaku）*
+- 调整了iOS的验证机制，现在iOS的密钥会储存到keychain*（作者：Frenqy）*
 
 ### 0.7.0
 
