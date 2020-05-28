@@ -1,17 +1,26 @@
 # 更新日志
 
-> Android最新版：0.7.1
+> Android最新版：0.7.2
 > 
-> iOS最新版：0.7.1
+> iOS最新版：0.7.2
 >
-> Windows最新版：0.7.1
+> Windows最新版：0.7.2
 ------
 
 ## 更新日志
 
+### 0.7.2
+
+- 新增制谱器（测试版）*（作者：AECBanana、KCFindstr）*
+- 新增一键分享功能，可以将已有的谱面打包分享给别人*（作者：KCFindstr）*
+- 新增从Web Konsole隔空投送kirapack的功能*（作者：GEEKiDoS）*
+- 修复了进入游戏时黑屏时间过长的问题*（作者：GEEKiDoS）*
+- 修复了翻译文本缺漏、错误的问题*（作者：AECBanana、ReiKohaku）*
+
 ### 0.7.1
 
 - UI界面还原到先前的风格，并做了部分优化*（作者：AECBanana、Frenqy、GEEKiDoS、LingFeng-bbben）*
+- 新增了Web Konsole，用于在外部设置配置和查看日志*（作者：GEEKiDoS）*
 - 修复了音量调节存在的问题*（作者：Frenqy）*
 - 更换了新的内测密钥验证系统，请重新获取密钥*（作者：Frenqy、ReiKohaku）*
 - 调整了iOS的验证机制，现在iOS的密钥会储存到keychain*（作者：Frenqy）*
