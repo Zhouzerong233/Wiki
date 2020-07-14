@@ -131,7 +131,6 @@ _不活跃：指两周内没有登录游戏的记录_
 	        <summary>使用爱思助手签名教程</summary>
 	        
 		如果您无法安装Altstore，则可以通过以下步骤安装BanGround
-		
 	        #### 所需软件
 	
 	        爱思助手：[https://www.i4.cn/pros.html](https://www.i4.cn/pros.html)
