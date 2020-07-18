@@ -1,13 +1,27 @@
 # 更新日志
 
-> Android最新版：0.7.2
+> Android最新版：0.7.3
 > 
-> iOS最新版：0.7.2
+> iOS最新版：0.7.3
 >
-> Windows最新版：0.7.2
+> Windows最新版：0.7.3
 ------
 
 ## 更新日志
+
+### 0.7.3
+
+- 调整了整体UI与风格设计*（作者：AECBanana）*
+- 新增了编辑器密度预览*（作者：KCFindstr）*
+- 新增了难度切换动画*（作者：AECBanana）*
+- 新增了BanGround Chart Format V2支持*（作者：KCFindstr）*
+- 更新了Konsole界面与功能*（作者：GEEKiDoS、ReiKohaku）*
+- 修正了编辑器mapping的“+”、“-”按钮位置*（作者：AECBanana）*
+- 修复了音频同步存在的问题*（作者：KCFindstr）*
+- 修复了歌曲选取列表的一系列问题*（作者：Frenqy）*
+- 修复了调节向导中会显示mod图标的问题*（作者：Frenqy）*
+- 扩大了编辑器时间线拖动按钮的范围*（作者：AECBanana）*
+- 移除了Perfect、SuddenDeath和调节向导的结算动画*（作者：Frenqy）*
 
 ### 0.7.2
 
