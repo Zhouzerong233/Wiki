@@ -1,13 +1,25 @@
 # 更新日志
 
-> Android最新版：0.7.3
+> Android最新版：0.8.0
 > 
-> iOS最新版：0.7.3
+> iOS最新版：0.8.0
 >
-> Windows最新版：0.7.3
+> Windows最新版：0.8.0
 ------
 
 ## 更新日志
+
+### 0.8.0
+
+**BanGround社区内测已经启动！[访问社区](https://banground.live)**
+- 新增了谱面编辑器相关的一系列功能*（作者：AECBanana、KCFindstr）*
+- 新增了BanGround Format v2支持，同时移除了BanGround Format v1的支持*（作者：KCFindstr）*
+- 新增了内置脚本编辑器*（作者：GEEKiDoS）*
+- 新增了通过脚本更换背景的功能*（作者：GEEKiDoS）*
+- 更换了账号验证系统，现在需要在BanGround社区进行注册以登录游戏
+- 调整了界面样式*（作者：AECBanana）*
+- 修复了谱面选择列表存在的问题*（作者：Frenqy）*
+- 优化了游戏性能*（作者：Frenqy、KCFindstr）*
 
 ### 0.7.3
 
