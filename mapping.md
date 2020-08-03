@@ -18,9 +18,11 @@
 
 ### Save `Ctrl+S`
 保存谱面。
-### Timing `Ctrl+T`
+
+## Timing `Ctrl+T`
 修改BPM和Offset（前黑长度）。BPM不会影响音符流速。
-### Metadata `Ctrl+M`
+
+## Metadata `Ctrl+M`
 修改谱面或歌曲信息。对歌曲信息的修改将作用于所有使用该歌曲的谱面。
 
 ## 轻飘飘音符
