@@ -283,65 +283,15 @@ _注意：以上选项变更后都需要重启游戏_
 
 kirapack导入失败请在群里附上错误信息截图
 
-**游戏本体其他问题请自行提交issue：[https://github.com/BanGround/BanGround-Unity/issues](https://github.com/BanGround/BanGround-Unity/issues)** 或通过机器人提交
+**游戏本体其他问题请自行提交issue：**
 
-*始终推荐自行提交，支持markdown，通过机器人提交issue请不要试图使用特殊格式(html/markdown/etc)，还会有奇怪的bug*
+**[通过GitHub](https://github.com/BanGround/BanGround-Unity/issues)** 
 
-##### 通过机器人提交issue
-
-1. 在群里发送`/issue create`，然后与机器人私聊
-
-2. 根据机器人提示依次发送**问题标题**、**问题描述**、**如何复现问题**、**设备信息**、**补充截图**、**确认发送**
-
-- 您可以通过机器人收到issue的最新动态
-
-[_更多机器人指令_](#issue-相关)
+**[通过Gitee](https://gitee.com/Kirakira-Games/BanGround-Unity/issues)** 
 
 ## 群机器人指令
 
-### ⑨bot
-
-`/help` 获取机器人帮助
-
-#### auth key 相关
-
-> ⑨bot的auth key命令已弃用，请查看小鱼的auth key命令
-
-`/auth register` 注册用户
-
-`/auth view` 查看所拥有的key(获得以下指令id参数)
-
-`/auth login [id]` 查询最近登陆信息
-
-`/auth clear [id]` 清除设备信息
-
-#### issue 相关
-
-`/issue create` 创建issue
-
-`/issue create` 创建issue
-
-`/issue list` 查看我创建的issue(获得以下指令id参数)
-
-`/issue view <id>` 查看issue详情
-
-`/issue comment <id>` 评论并订阅issue
-
-`/issue unsubscribe <id>` 取消订阅issue(创建者不能取消订阅)
-
 ### 小鱼
-
-#### auth key相关
-
-`注册内测`或`register_tester` 注册获得内测资格
-
-`获取密钥`或`新增密钥`或`add_authkey` 获取一个新的登录密钥
-
-`查询密钥`或`view` 检查已获取的所有登录密钥
-
-`解绑密钥 <id>`或`解除绑定 <id>`或`解绑 <id>`或`unbound <id>`或`clear <id>` 将一个密钥与当前绑定的设备解绑。此处的id请通过“查询密钥”指令获取
-
-`查询登录信息`或`登录信息`或`login` 查询直到目前的持有密钥数和登录次数
 
 #### kirapack相关
 
@@ -363,6 +313,6 @@ kirapack导入失败请在群里附上错误信息截图
 
 ***
 
-手册版本：V1.6.0
+手册版本：V1.6.1
 
-更新日期：2020/05/19
+更新日期：2020/08/08
