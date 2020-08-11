@@ -1,13 +1,90 @@
 # 更新日志
 
-> Android最新版：0.6.0
+> Android最新版：0.8.0
 > 
-> iOS最新版：0.6.0
+> iOS最新版：0.8.0
 >
-> Windows最新版：0.5.0
+> Windows最新版：0.8.0
 ------
 
 ## 更新日志
+
+### 0.8.0
+
+**BanGround社区内测已经启动！[访问社区](https://banground.live)**
+- 新增了谱面编辑器相关的一系列功能*（作者：AECBanana、KCFindstr）*
+- 新增了BanGround Format v2支持，同时移除了BanGround Format v1的支持*（作者：KCFindstr）*
+- 新增了内置脚本编辑器*（作者：GEEKiDoS）*
+- 新增了通过脚本更换背景的功能*（作者：GEEKiDoS）*
+- 更换了账号验证系统，现在需要在BanGround社区进行注册以登录游戏
+- 调整了界面样式*（作者：AECBanana）*
+- 修复了谱面选择列表存在的问题*（作者：Frenqy）*
+- 优化了游戏性能*（作者：Frenqy、KCFindstr）*
+
+### 0.7.3
+
+- 调整了整体UI与风格设计*（作者：AECBanana）*
+- 新增了编辑器密度预览*（作者：KCFindstr）*
+- 新增了难度切换动画*（作者：AECBanana）*
+- 新增了BanGround Chart Format V2支持*（作者：KCFindstr）*
+- 更新了Konsole界面与功能*（作者：GEEKiDoS、ReiKohaku）*
+- 修正了编辑器mapping的“+”、“-”按钮位置*（作者：AECBanana）*
+- 修复了音频同步存在的问题*（作者：KCFindstr）*
+- 修复了歌曲选取列表的一系列问题*（作者：Frenqy）*
+- 修复了调节向导中会显示mod图标的问题*（作者：Frenqy）*
+- 扩大了编辑器时间线拖动按钮的范围*（作者：AECBanana）*
+- 移除了Perfect、SuddenDeath和调节向导的结算动画*（作者：Frenqy）*
+
+### 0.7.2
+
+- 新增制谱器（测试版）*（作者：AECBanana、KCFindstr）*
+- 新增一键分享功能，可以将已有的谱面打包分享给别人*（作者：KCFindstr）*
+- 新增从Web Konsole隔空投送kirapack的功能*（作者：GEEKiDoS）*
+- 修复了进入游戏时黑屏时间过长的问题*（作者：GEEKiDoS）*
+- 修复了翻译文本缺漏、错误的问题*（作者：AECBanana、ReiKohaku）*
+
+### 0.7.1
+
+- UI界面还原到先前的风格，并做了部分优化*（作者：AECBanana、Frenqy、GEEKiDoS、LingFeng-bbben）*
+- 新增了Web Konsole，用于在外部设置配置和查看日志*（作者：GEEKiDoS）*
+- 修复了音量调节存在的问题*（作者：Frenqy）*
+- 更换了新的内测密钥验证系统，请重新获取密钥*（作者：Frenqy、ReiKohaku）*
+- 调整了iOS的验证机制，现在iOS的密钥会储存到keychain*（作者：Frenqy）*
+
+### 0.7.0
+
+- UI焕然一新！*（作者：AECBanana、Frenqy、GEEKiDoS、KCFindstr、LingFeng-bbben）*
+- 新增了游戏内    的Live2d*（作者：LingFeng-bbben）*
+- 新增了偏移调节向导*（作者：AECBanana、KCFindstr）*
+- 新增了Full Combo和All Perfect指示器*（作者：AECBanana、Frenqy）*
+- 修复了上隐调整预览存在的问题*（作者：Frenqy）*
+
+### 0.6.2
+
+- 修复了UI的一些错误*（作者：AECBanana）*
+- 修复了退出游戏时多次点击返回键会导致退出界面重复出现的问题*（作者：Frenqy）*
+- 修复了完成谱面时弹出完成结果时，仍然可以点击轨道的问题*（作者：Frenqy）*
+- 修复了滑条尾端显示异常的问题*（作者：Frenqy）*
+- 修复了无法调节音符大小至300%的问题*（作者：Frenqy）*
+- 修复了mod名称显示不一致的问题*（作者：LingFeng-bbben）*
+- 优化了Autoplay Mod的鼠标显示*（作者：Frenqy）*
+- 优化了UI显示*（作者：AECBanana）*
+- 优化了连击动画*（作者：AECBanana）*
+- 优化了排序功能的体验*（作者：LingFeng-bbben）*
+- 优化了音频同步功能*（作者：KCFindstr）*
+- 调整了应用名称
+
+### 0.6.1
+
+- 新增了音频同步详细信息显示*（作者：KCFindstr）*
+- 修复了加载界面音符统计数量错误的问题*（作者：KCFindstr）*
+- 修复了结算界面显示错误的问题*（作者：Frenqy）*
+- 修复了iOS版本更新后谱面消失的问题*（作者：GEEKiDoS）*
+- 修复了Auto下滑键击打较晚的问题*（作者：KCFindstr）*
+- 修复了偶尔Start按钮无法点击的问题*（作者：LingFeng-bbben）*
+- 修复了背景视频相关的问题*（作者：KCFindstr）*
+- 优化了UI显示*（作者：AECBanana）*
+- 优化了加载界面显示*（作者：AECBanana）*
 
 ### 0.6.0
 

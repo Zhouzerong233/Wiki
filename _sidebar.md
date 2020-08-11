@@ -2,4 +2,5 @@
 * [游戏基础设定](/setting)
 * [社区规范](/rules)
 * [谱面格式](/map)
+* [制谱器](/mapping)
 * [更新日志](/update)

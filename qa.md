@@ -12,7 +12,7 @@
 
 内测报名人数较多，且为了能更好地完成测试任务，本群将定期清理不活跃的内测用户
 
-_不活跃：指两周内没有登录游戏的记录_
+_不活跃：两周内没有登录游戏的记录/没有跟随版本更新/没有注册社区等_
 
 ## 安装游戏
 
@@ -37,62 +37,96 @@ _不活跃：指两周内没有登录游戏的记录_
 	<details>
 		<summary>使用AltStore签名教程</summary>
 		
-		#### 所需软件
-		
+	#### 所需软件
 		1. AltStore([https://altstore.io/](https://altstore.io/))
 		2. iTunes([https://www.apple.com.cn/itunes/](https://www.apple.com.cn/itunes/))
 		3. iCloud([https://support.apple.com/zh-cn/HT204283](https://support.apple.com/zh-cn/HT204283))
-		
-		#### 安装Altstore
-		
+
+	#### 安装Altstore
 		1. 安装完成后运行电脑上的AltStore(运行后会出现在任务栏)
 		2. 在您的iOS设备上信任连接的电脑(首次连接电脑可能需要)
 		3. 打开iTunes，启用“通过Wi-Fi与此iPhone/iPad同步”
 		4. 点击任务栏的AltStore图标，点击“Install AltStore”并选择您的设备进行安装
 		5. 在弹出的窗口登陆您的AppleID以完成安装
-		
-		#### 通过Altstore安装BanGround
-		
+
+	#### 通过Altstore安装BanGround
 		1. 在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件并传输到您设备内
 		2. 在设备中找到您下载的ipa，点击“用其他应用打开”。
 		3. 找到并选择“拷贝到‘AltStore’”
 		4. 在Altstore中输入安装时的AppleID进行登陆，等待片刻即可完成安装
 		
-		#### 注意事项
-		
+	#### 注意事项
 		- Altstore的签名有效期为7天。电脑端AltStore运行时，如果您的iOS设备处于同一无线网络下AltStore即可自动续签
-
 	</details>
 
-	2. 使用Appcake代为签名安装(不稳定，**不需要**电脑)
+	2. 使用爱思助手自行签名安装(推荐，**需要**电脑)
+	
+	<details>
+		<summary>使用爱思助手签名教程</summary>
+	        
+	如果您无法安装Altstore，则可以通过以下步骤安装BanGround
 
-		请下载安装AppCake后用AppCake打开ipa文件
-		
-		> AppCake下载地址(需要Safari打开)：[https://iphonecake.com](https://iphonecake.com)
+	#### 所需软件
+		- 爱思助手([https://www.i4.cn/pros.html](https://www.i4.cn/pros.html))
 
-		*注意：由于Appcake企业签名的的不稳定，偶尔会出现掉签情况，掉签后可能一段时间内无法恢复签名的使用。并且在Appcake签名恢复后您需要完整卸载Appcake与BanGround后重新安装，这也就意味着**您会丢失所有用户数据**。*
+	#### 通过爱思助手为BanGround签名
+	        
+	##### 准备工作
 		
-	3. 使用Mac自行签名安装(较麻烦，**需要**电脑)
+		1. 在内测群的群文件中，找到**iOS**文件夹，从里面下载ipa文件	
+		2. 将您的手机/iPad连接电脑后打开爱思助手，找到**设备标识(UDID)**并点击复制
+		3. 点击**工具箱**页面，在“更多工具”中找到**IPA签名**并点击
+		4. 点击“使用Apple ID签名”，找到**添加Apple ID**并点选，输入您的Apple ID账号密码，并将刚刚复制好的UDID输入第三行中
+		
+	##### 正式签名
+		
+		1. 点击左上角的**添加IPA文件**，导入BanGround游戏本体并点击游戏图标前面的方框
+		2. 点击右下角的**开始签名**，等待签名完成
+		
+	#### 通过爱思助手安装BanGround
+		
+		1. 点击**我的设备**，找到**应用游戏**
+		2. 点击**导入安装**，导入签名后的游戏本体，等待安装完成
+		
+	#### 注意事项
+		- 爱思助手的签名有效期为7天。超过签名有效期后，需要您重新按照“正式签名”内的步骤重新签名，并重新覆盖安装
+	</details>
+
+	3. 使用Appcake代为签名安装(不稳定，**不需要**电脑)
 
 	<details>
-		<summary>通过macOS自签教程</summary>
+		<summary>使用Appcake签名教程</summary>
+
+	_使用Appcake代为签名安装的方法并不通常有效_
+
+	请下载安装AppCake后用AppCake打开ipa文件
+		
+	AppCake下载地址(需要Safari打开):[https://iphonecake.com](https://iphonecake.com)
+
+		*注意：由于Appcake企业签名的的不稳定，偶尔会出现掉签情况，掉签后可能一段时间内无法恢复签名的使用。并且在Appcake签名恢复后您需要完整卸载Appcake与BanGround后重新安装，这也就意味着**您会丢失所有用户数据**。*
+	</details>
+		
+	4. 使用Mac自行签名安装(较麻烦，**需要**电脑)
+
+	<details>
+		<summary>通过macOS签名教程</summary>
 		
 		如果您没有Mac，以下步骤需要从头看起
 		
 		如果您有Mac，请跳转至步骤6`安装ipa文件`
 		
-		#### 所需软件
+	#### 所需软件
 		
 		1. vmware 15 pro
 		2. macOS 10.15镜像
 		3. vm unlock插件
 		4. darwin.iso
 		
-		需要的软件放在百度网盘，镜像大小10G
+	需要的软件放在百度网盘，镜像大小10G
 		
-		链接: [https://pan.baidu.com/s/1Pulz57HRww9ZB_mCw4yAzg](https://pan.baidu.com/s/1Pulz57HRww9ZB_mCw4yAzg) 提取码: 6yan
+	链接: [https://pan.baidu.com/s/1R_m_bS9JrZJqGxlRsMJHEg](https://pan.baidu.com/s/1R_m_bS9JrZJqGxlRsMJHEg) 提取码: bgrd
 		
-		#### 安装步骤
+	#### 安装步骤
 		1. vmware的安装
 		
 			自行百度，安装完成后不要打开，接下来还要安装插件
@@ -123,9 +157,8 @@ _不活跃：指两周内没有登录游戏的记录_
 			3. 下载NullXImpactor
 			4. 打开应用，把ipa文件拖动到该软件中，点击install
 			5. 输入帐号密码，等待安装完成
-		
 	</details>
-
+	
 ***由于不明原因，证书版会出现掉签的情况，所以不再提供证书版下载，原先购买证书版的可以选择退款或等社区建设完成后可以获得额外1个月Supporter Ⅳ资格作为补偿***
 
 
@@ -135,19 +168,15 @@ _不活跃：指两周内没有登录游戏的记录_
 
 ## 进入游戏
 
-安装好游戏后，点击游戏图标启动游戏。首次启动需要**auth key**
+安装好游戏后，点击游戏图标启动游戏。启动游戏需要**社区账号**
 
-获取auth key请在内测群使用`/auth register`指令，机器人会将密钥通过私聊的形式发送给你
+社区地址：[https://banground.live/](https://banground.live/)
 
-如果在`/auth register`后在群内和私聊都没有看到机器人的回应，可以直接通过`/auth view`指令查询结果，机器人会将你的密钥通过私聊的形式发送给你
+注册社区账号需要邀请码
 
-auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将你拥有的密钥通过私聊的形式发送给你
+获取邀请码请在内测群使用`申请邀请码`指令，机器人会将密钥通过私聊的形式发送给你
 
-更换设备或更新游戏后，如果原有auth key无法使用，请先使用`/auth view`查询原有auth key的id，再使用`/auth clear id`清除设备绑定信息，解绑后即可使用原有key进行登陆。如遇机器人出错无法clear，可向管理员寻求帮助删除原有auth key后自行重新获取新的auth key
-
-[_更多机器人指令_](#auth-key-相关)
-
-如果你有多个设备需要测试，请联系管理员为你申请新的auth key
+邀请码遗忘或丢失请使用`查询邀请码`指令查询您的邀请码
 
 ## 获取/导入谱面
 
@@ -209,9 +238,9 @@ auth key遗忘或丢失请在内测群使用`/auth view`指令，机器人会将
 
 ## 延迟调节
 
-目前还没有可视化调节延迟的选项，需要根据自己平时的经验进行调节
+**(推荐)**请使用设置中`调节向导`进行延迟调节
 
-您也可以尝试下列的任一方法进行调节：
+(旧版)您也可以尝试下列的任一方法进行调节：
 
 1. **设置**的**判定**选项卡里，调节**音频偏移**，效果为BanG Dream本家的17倍
 
@@ -228,7 +257,7 @@ $$
 
 4. 打击音延迟大请尝试减小缓冲区
 
-_注意：调节偏移的单位为毫秒，使用“Offset Rhythm Test”谱面进行上述调节可以获得更好的效果_
+_注意：调节偏移的单位为毫秒_
 
 ## 爆音/没有声音
 
@@ -240,10 +269,7 @@ _注意：调节偏移的单位为毫秒，使用“Offset Rhythm Test”谱面�
 
 	在**设置**的**声音**选项卡里，选择另一个音频引擎，然后重启再试
 
-3. 使用群文件里的**爆音修复版(fmod1)**
-
 _注意：以上选项变更后都需要重启游戏_ 
-
 
 ## 其他问题
 
@@ -251,53 +277,27 @@ _注意：以上选项变更后都需要重启游戏_
 
 kirapack导入失败请在群里附上错误信息截图
 
-**游戏本体其他问题请自行提交issue：[https://github.com/BanGround/BanGround-Unity/issues](https://github.com/BanGround/BanGround-Unity/issues)** 或通过机器人提交
+**游戏本体其他问题请自行提交issue：**
 
-*始终推荐自行提交，支持markdown，通过机器人提交issue请不要试图使用特殊格式(html/markdown/etc)，还会有奇怪的bug*
+<table><tr><td>
 
-##### 通过机器人提交issue
+[通过GitHub](https://github.com/BanGround/BanGround-Unity/issues)
 
-1. 在群里发送`/issue create`，然后与机器人私聊
+</td><td>
 
-2. 根据机器人提示依次发送**问题标题**、**问题描述**、**如何复现问题**、**设备信息**、**补充截图**、**确认发送**
+[通过Gitee](https://gitee.com/Kirakira-Games/BanGround-Unity/issues)
 
-- 您可以通过机器人收到issue的最新动态
+</td></tr></table>
 
-[_更多机器人指令_](#issue-相关)
+_游戏本体问题直接发群里，很可能导致您的问题被淹没，请务必自行提交issue_
 
 ## 群机器人指令
 
-### ⑨bot
-
-`/help` 获取机器人帮助
-
-#### auth key 相关
-
-`/auth register` 注册用户
-
-`/auth view` 查看所拥有的key(获得以下指令id参数)
-
-`/auth login [id]` 查询最近登陆信息
-
-`/auth clear [id]` 清除设备信息
-
-#### issue 相关
-
-`/issue create` 创建issue
-
-`/issue create` 创建issue
-
-`/issue list` 查看我创建的issue(获得以下指令id参数)
-
-`/issue view <id>` 查看issue详情
-
-`/issue comment <id>` 评论并订阅issue
-
-`/issue unsubscribe <id>` 取消订阅issue(创建者不能取消订阅)
-
 ### 小鱼
 
-`kirapack <谱面id> [预览起始时间(秒) 预览终止时间(秒) 背景图片链接]`转换Bestdori上的谱面为kirapack，提供下载链接，并登录到[小站](http://212.64.10.35/#/list)上以供搜索、浏览、下载
+#### kirapack相关
+
+`kirapack <谱面id> [预览起始时间(秒) 预览终止时间(秒) 背景图片链接]`转换Bestdori上的谱面为kirapack，提供下载链接，并登录到[小站](https://fish.reikohaku.fun/#/list)上以供搜索、浏览、下载
 
 `kkp <谱面id>`查询Bestdori!上的谱面信息
 
@@ -311,10 +311,10 @@ kirapack导入失败请在群里附上错误信息截图
 
 	[_ebbb国内线路_](https://reikohaku.gitee.io/ebbb)
 
-- 摸鱼小站：[http://212.64.10.35/](http://212.64.10.35/)
+- 摸鱼小站：[https://fish.reikohaku.fun/](https://fish.reikohaku.fun/)
 
 ***
 
-手册版本：V1.5.7
+手册版本：V1.8.0
 
-更新日期：2020/04/18
+更新日期：2020/08/11
